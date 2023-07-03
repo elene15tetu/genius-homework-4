@@ -1,0 +1,38 @@
+// Base 
+
+@import './base';
+
+// Utils
+
+@import './utils/fonts';
+@import './utils/kejframes';
+@import './utils/texts';
+@import './utils/util';
+@import './utils/variables';
+
+// Components 
+
+@import './components/buttons';
+@import './components/links';
+@import './components/star';
+@import './components/procedures-card';
+@import './components/carosel-button';
+@import './components/pagination';
+@import './components/background-adventeges';
+
+// Layouts
+
+@import './layouts/header';
+@import './layouts/hero-section1';
+@import './layouts/about-us-section2';
+@import './layouts/avantages-section3';
+@import './layouts/procedures-section4';
+@import './layouts/contact-section5';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
+@import './layouts/form';
+
+
+
+

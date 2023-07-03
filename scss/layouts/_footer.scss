@@ -1,0 +1,163 @@
+.footer{
+   padding: 56px 0;
+   position: relative;
+   background-image: url('../images/background-footer.png');
+   background-color: var(--color-primary-dark);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   &::after{
+      display: none;
+
+      @media screen and (min-width: $bp-tablet){  
+         display: flex;
+         position: absolute;
+         width: 274px;
+         height: 152px;
+         background-size: 100%; 
+         background-image: url(../images/cosmetics-footer.png);
+         content: '';
+         bottom: 0;
+         right: 0;
+      }
+   }
+
+   &__container{
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $bp-tablet) {
+         flex-direction: row;
+         gap: 50px;
+      }
+      @media screen and (min-width: $bp-desktop) {
+         gap: 186px;
+      }
+   }
+
+   &__nav,
+   &__adress{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+
+      @media screen and (min-width: $bp-tablet) {
+         flex-direction: row;
+         flex-basis: 50%;
+         text-align: left;
+         gap: 50px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+         gap: 186px;
+      }
+   }
+
+   &__menu{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+   }
+
+   &__address-list,
+   &__address-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+   }
+
+   &__address-link:hover {
+      color: var(--color-brand);
+   }
+
+   &__socials {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      
+      @media screen and (min-width: $bp-tablet) {
+         justify-content: flex-start;
+      }
+   }
+
+   &__socials-icon{ 
+      fill: var(--color-text-white);
+      padding: 0;
+
+      @media screen and (min-width: $bp-tablet) {
+         padding-top: 16px;
+      }
+   }
+
+   &__socials-icon:hover {
+      fill: var(--color-brand);
+   }
+
+   &__logo{
+      width: 57px;
+      margin: 0 auto;
+
+      @media screen and (min-width: $bp-desktop) {
+         width: 83px;
+         padding-left: 100px;
+      }
+   }
+   
+   &__link:hover {
+      color: var(--color-brand);
+   }
+
+   &____address-list{
+      flex-grow: 1;
+      min-width: 203px;
+      color: var(--color-text-white);
+   }
+
+   &__address-link {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+         display: flex;
+         color: var(--color-secondary-light);
+         text-decoration: none;
+         font-size: 16px;
+         line-height: 1.18;
+         color: var(--color-text-white);
+
+         &:hover {
+            color: var(--color-brand);
+         }
+      }
+   }
+
+   &__link {
+      color: var(--color-text-white);
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 1.18;
+   }
+
+   &__address-politic {
+      color: var(--color-text-white);
+      text-decoration: none;
+      margin: 0 auto;
+
+      @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      line-height: 1.18;
+      margin: 0;
+         &:hover {
+            color: var(--color-brand);
+         }
+      }
+   }
+
+   &__address-copyright{
+      color: var(--color-secondary-light);
+      font-size: 14px;
+   }
+}

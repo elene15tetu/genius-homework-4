@@ -1,0 +1,92 @@
+.about-us-section {
+   padding: 0;
+   max-width: 709px;   
+
+   &__container {
+      padding: 0px 20px;
+      @media screen and (min-width: $bp-desktop) {
+         padding: 0 100px;
+      }
+   }
+
+   &__title {
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.1;
+      
+      @media screen and (min-width: $bp-tablet) {
+         text-align: left;
+         font-family: 'Play', sans-serif;
+         text-align: left;
+         font-size: 64px;
+         font-weight: 700;
+         line-height: 1.15;
+         padding-top: 0;
+      }
+   }
+
+   &__text {
+      color: var(--color-primary-dark);
+      font-size: 18px;
+      line-height: 1.7;
+      
+      @media screen and (min-width: $bp-tablet) {
+         font-size: 22px;
+         width: 709px;
+      }
+   }
+
+   &__img {
+      display: none;
+      
+      &--before{
+         position: absolute;
+         width: 327px;
+         height: 327px;
+         right: 200px;
+         top: 856px;
+      }
+
+      &--after{
+         position: absolute;
+         width: 327px;
+         height: 328px;
+         right:78px;
+         top: 1223px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+         display: block;
+         max-width: 372px;
+         max-height: 372px;
+         border-radius: 164px;
+      }
+   }
+
+   &__background{
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      padding-top: 0;
+      
+      @media screen and (min-width: $bp-desktop){
+         padding-top: 250px;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
